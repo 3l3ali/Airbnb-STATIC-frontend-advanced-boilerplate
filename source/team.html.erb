@@ -1,0 +1,23 @@
+<h1 class="text-center"><b>Our team</b></h1>
+
+<div class="team-wrapper text-center">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-12">
+        <ul class="list-inline">
+          <% %w(anne romain seb).each do |member| %>
+          <li>
+            <h2><%= member.capitalize %></h2>
+            <%= image_tag "#{member}.jpg" ,class: "img-circle avatar-xlarge" %>
+          </li>
+          <% end %>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <% link_to "#" do %>
+    <i class="fa fa-envelope"></i>
+    <%="contact@airbnb.com" %>
+  <% end %>
+</div>
+
